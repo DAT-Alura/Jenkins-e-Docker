@@ -107,3 +107,41 @@ Qual a função deles, respectivamente?
 - É a linguagem de programação recomendada para aplicações que serão construídas através de jobs no Jenkins.
 - __É uma sintaxe que utilizamos para criar os nossos pipelines com código__
 - No nosso exemplo, foi a linguagem utilizada na aplicação de todo-list.
+
+## Aula 5
+
+1 - Qual é a sintaxe correta para colocar uma decisão no pipeline, utilizando a linguagem Groovy?
+
+- __A__
+``` sh
+timeout(time: 10, unit: 'MINUTES') {
+    input(id: "Deploy Gate", message: "Deploy em produção?", ok: 'Deploy')
+}
+```
+
+- B
+``` sh
+tout(time: 10, unit: 'MINUTES') {
+    input(id: "Deploy Gate", message: "Deploy em produção?", ok: 'Deploy')
+}
+```
+
+- C
+``` sh
+timeout(time: 10 'MINUTES') {
+    input(id: "Deploy Gate", message: "Deploy em produção?", ok: 'Deploy')
+}
+```
+
+- D
+``` sh
+time-outs(time: 10, unit: 'MINUTES') {
+    input(id: "Deploy Gate", message: "Deploy em produção?", ok: 'Deploy')
+}
+```
+
+2 - Qual é uma das vantagens de passar parâmetros de um job para outro no Jenkins?
+
+- Essa é única maneira de habilitar o trigger de outros jobs automaticamente
+- Isso possibilita que o Jenkins combine todos os jobs encadeados em um novo job com todos os passos
+- __Com essa integração, alguns parâmetros podem ser passados para o primeiro job e os demais, quando configurados, podem receber automaticamente esses valores, como por exemplo o nome da imagem__
