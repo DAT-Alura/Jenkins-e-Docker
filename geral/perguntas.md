@@ -93,3 +93,17 @@ Qual a função deles, respectivamente?
 > Alternativa correta! Devemos construir somente uma vez a imagem no pipeline.
 
 - Para garantir que o time de desenvolvimento não acesse o artefato construído para produção
+
+## Aula 4
+
+1 - Qual o caminho no Jenkins para instalação de plugins?
+
+- Gerenciar Jenkins --> Gerenciar Plugins --> Instalados
+- __Gerenciar Jenkins --> Gerenciar Plugins --> Disponíveis__
+- Gerenciar Jenkins --> Configurar o sistema --> Nuvem
+
+2 - Escolha a opção que melhor reflete o que é a linguagem Groovy:
+
+- É a linguagem de programação recomendada para aplicações que serão construídas através de jobs no Jenkins.
+- __É uma sintaxe que utilizamos para criar os nossos pipelines com código__
+- No nosso exemplo, foi a linguagem utilizada na aplicação de todo-list.
