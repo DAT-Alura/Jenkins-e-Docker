@@ -145,3 +145,28 @@ time-outs(time: 10, unit: 'MINUTES') {
 - Essa é única maneira de habilitar o trigger de outros jobs automaticamente
 - Isso possibilita que o Jenkins combine todos os jobs encadeados em um novo job com todos os passos
 - __Com essa integração, alguns parâmetros podem ser passados para o primeiro job e os demais, quando configurados, podem receber automaticamente esses valores, como por exemplo o nome da imagem__
+
+## Aula 6
+
+1 - No último vídeo, conhecemos o Sonarqube. Dentre as alternativas abaixo, qual representa melhor a sua definição?
+
+- É uma ferramenta que constrói pipelines
+- É uma ferramenta que automaticamente identifica e corrige os code smells encontrados
+- __É uma ferramenta que escaneia o código fonte para identificar débitos técnicos, más práticas, erros de sintaxe e outras métricas__
+- É uma ferramenta que somente avalia o débito técnico de uma aplicação
+
+2 - Qual o comando que faz a instalação do Sonarqube com Docker?
+
+- apt-get install sonarcube
+- __docker run -d --name sonarqube -p 9000:9000 sonarqube:lts__
+- docker images -d --name sonarqube -p 9000:9000 sonarqube:lts
+
+3 - Tendo o seguinte parâmetro do sonar-scanner:
+``` bash
+-Dsonar.login
+```
+Qual a sua função?
+
+- É a senha que acompanha o nome do usuário sonar.login
+- É útil apenas quando precisamos criar retroativamente o histórico de um projeto não analisado antes
+- __É login ou token de autenticação de um usuário do SonarQube com permissão de execução de análise no projeto__
