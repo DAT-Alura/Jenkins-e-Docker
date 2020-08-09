@@ -76,3 +76,20 @@ Qual a função deles, respectivamente?
 - __Para garantir a utilização das melhores práticas na criação de um Dockerfile__
 - Com isso, garantimos que a imagem será registrada com sucesso no Docker Hub
 - Pois com o linter, garantimos que todos os comandos serão executados corretamente
+
+## Aula 3
+
+1 - Considerando a abordagem utilizada para definir a configuração da aplicação nos ambientes de desenvolvimento e produção, escolha a alternativa que justifica tal escolha:
+
+- Nada justifica tal escolha
+- Apesar da escolha de separar os ambientes por arquivo de configuração, recomenda-se rodar os testes sistêmicos no banco de dados de produção
+- __A abordagem escolhida permite que a mesma imagem construída no processo seja utilizada para testes, validações e também para rodar em produção, visto que o arquivo .env de cada ambiente é passado na execução do container__
+- Seria mais interessante construir a imagem com o arquivo de configuração de ambiente
+
+2 - Qual a vantagem de registrar a imagem no Docker Hub no início do pipeline?
+
+- A principal vantagem é que a imagem com a aplicação 100% funcional estará sempre disponível
+- __Que, após registrar a imagem, qualquer um com acesso ao domínio pode baixar e rodar a aplicação__
+> Alternativa correta! Devemos construir somente uma vez a imagem no pipeline.
+
+- Para garantir que o time de desenvolvimento não acesse o artefato construído para produção
