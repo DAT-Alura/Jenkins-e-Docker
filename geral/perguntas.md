@@ -50,3 +50,29 @@ Qual o repositório o Jenkins está verificando?
 
 - O repositório local do container docker
 - O repositório remoto no Gitlab.
+
+## Aula 2
+
+1 - Sejam os seguintes comandos no build manual:
+``` bash
+python createsuperuser
+python migrate
+```
+Qual a função deles, respectivamente?
+
+- Criar o virtualenv para instalar as dependências
+- Migrar as alterações dos seus modelos; criar o principal usuário para acessar a aplicação
+- __Criar o principal usuário para acessar a aplicação; migrar as alterações dos seus modelos__
+
+2 - No servidor onde o Docker está instalado, qual o arquivo que criamos para possibilitar o controle remoto do Docker?
+
+- /var/systemd/system/docker.service.d/override.conf
+- __/etc/systemd/system/docker.service.d/override.conf__
+- /etc/systemd/system/docker.service.d/docker-override.conf
+- /etc/init.d/system/docker.service.d/override.conf
+
+3 - Na construção de imagens para o Docker, recomenda-se o uso de um linter. Por quê?
+
+- __Para garantir a utilização das melhores práticas na criação de um Dockerfile__
+- Com isso, garantimos que a imagem será registrada com sucesso no Docker Hub
+- Pois com o linter, garantimos que todos os comandos serão executados corretamente
